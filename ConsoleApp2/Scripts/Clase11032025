@@ -1,0 +1,14 @@
+CREATE DATABASE db_clase11032025;
+GO
+USE db_clase11032025;
+GO
+
+CREATE TABLE [Estados] (
+	[Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[Nombre] NVARCHAR(50) NOT NULL,
+);
+
+INSERT INTO [Estados] ([Nombre]) VALUES ('Activo');
+INSERT INTO [Estados] ([Nombre]) VALUES ('Inactivo');
+
+SELECT * FROM [Estados];
