@@ -1,4 +1,5 @@
 ﻿using ConsoleApp2.Modelos;
+using ConsoleApp2.Conexion;
 
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
@@ -31,3 +32,6 @@ var personaje2= new Personajes()
     tipo= new TiposPersonajes(3,"Animado")
 };
 Console.WriteLine(personaje2.tipo.nombre);
+
+var conexion = new ConexionEF();
+conexion.ConexionBasica();
