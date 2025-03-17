@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AA\\Desktop\\2025-1PDS8-10\\ConsoleApp2\\ConsoleApp2.csproj": {}
+    "C:\\Users\\aa\\Desktop\\2025-1PDS8-10\\ConsoleApp2\\ConsoleApp2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AA\\Desktop\\2025-1PDS8-10\\ConsoleApp2\\ConsoleApp2.csproj": {
+    "C:\\Users\\aa\\Desktop\\2025-1PDS8-10\\ConsoleApp2\\ConsoleApp2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AA\\Desktop\\2025-1PDS8-10\\ConsoleApp2\\ConsoleApp2.csproj",
+        "projectUniqueName": "C:\\Users\\aa\\Desktop\\2025-1PDS8-10\\ConsoleApp2\\ConsoleApp2.csproj",
         "projectName": "ConsoleApp2",
-        "projectPath": "C:\\Users\\AA\\Desktop\\2025-1PDS8-10\\ConsoleApp2\\ConsoleApp2.csproj",
-        "packagesPath": "C:\\Users\\AA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AA\\Desktop\\2025-1PDS8-10\\ConsoleApp2\\obj\\",
+        "projectPath": "C:\\Users\\aa\\Desktop\\2025-1PDS8-10\\ConsoleApp2\\ConsoleApp2.csproj",
+        "packagesPath": "C:\\Users\\aa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aa\\Desktop\\2025-1PDS8-10\\ConsoleApp2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\AA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
