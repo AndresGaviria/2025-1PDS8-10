@@ -36,7 +36,7 @@ namespace ConsoleApp2.Conexion
             var tipo = conexion.Tipos!.FirstOrDefault(x => x.Nombre == "Viento");
 
             var instrumento = new Instrumentos();
-            instrumento.Codigo = "TS-1526546";
+            instrumento.Codigo = "TS-" + DateTime.Now.ToString("yyyyMMddhhmmss");
             instrumento.Nombre = "Prueba";
             instrumento.Cantidad = 2;
             instrumento.Fecha = DateTime.Now;
