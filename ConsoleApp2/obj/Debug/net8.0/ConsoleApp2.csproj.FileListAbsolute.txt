@@ -62,3 +62,4 @@ C:\Users\AA\Desktop\2025-1PDS8-10\ConsoleApp2\bin\Debug\net8.0\runtimes\win\lib\
 C:\Users\AA\Desktop\2025-1PDS8-10\ConsoleApp2\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\AA\Desktop\2025-1PDS8-10\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.csproj.AssemblyReference.cache
 C:\Users\AA\Desktop\2025-1PDS8-10\ConsoleApp2\obj\Debug\net8.0\ConsoleA.D5FB4C91.Up2Date
+C:\Users\aa\Desktop\2025-1PDS8-10\ConsoleApp2\bin\Debug\net8.0\Newtonsoft.Json.dll

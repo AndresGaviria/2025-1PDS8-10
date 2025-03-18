@@ -28,6 +28,7 @@
 
 # Commandos dotnet 
 - dotnet run
+- dotnet build
 - dotnet restore
 - dotnet add package NAME --version NUMBER
 - dotnet remove package NAME
