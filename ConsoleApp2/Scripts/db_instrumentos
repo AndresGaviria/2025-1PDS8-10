@@ -1,0 +1,36 @@
+CREATE DATABASE db_instrumentos;
+GO
+USE db_instrumentos;
+GO
+
+CREATE TABLE [Tipos] (
+    [Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    [Nombre] NVARCHAR(50) NOT NULL UNIQUE,
+    [Activo] BIT NOT NULL,
+);
+
+INSERT INTO [Tipos] ([Nombre], [Activo]) VALUES ('Cuerda', 1);
+INSERT INTO [Tipos] ([Nombre], [Activo]) VALUES ('Tambores', 1);
+INSERT INTO [Tipos] ([Nombre], [Activo]) VALUES ('Viento', 1);
+INSERT INTO [Tipos] ([Nombre], [Activo]) VALUES ('Electronica', 0);
+
+SELECT * FROM [Tipos];
+
+CREATE TABLE [Instrumentos] (
+    [Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    [Codigo] NVARCHAR(50) NOT NULL UNIQUE,
+    [Nombre] NVARCHAR(50) NOT NULL,
+    [Cantidad] INT NOT NULL,
+    [Fecha] SMALLDATETIME NOT NULL,
+    [Tipo] INT NOT NULL REFERENCES [Tipos]([Id]),
+    [Activo] BIT NOT NULL,
+);
+
+INSERT INTO [Instrumentos] ([Codigo],[Nombre],[Cantidad],[Fecha],[Tipo],[Activo]) 
+VALUES ('TM-46546', 'DJ', 5, GETDATE(), 4, 1);
+INSERT INTO [Instrumentos] ([Codigo],[Nombre],[Cantidad],[Fecha],[Tipo],[Activo]) 
+VALUES ('GU-78978', 'Guitar', 5, GETDATE(), 1, 1);
+INSERT INTO [Instrumentos] ([Codigo],[Nombre],[Cantidad],[Fecha],[Tipo],[Activo]) 
+VALUES ('BR-23568', 'Drums', 5, GETDATE(), 2, 0);
+
+SELECT * FROM [Instrumentos];
