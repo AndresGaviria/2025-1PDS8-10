@@ -1,0 +1,31 @@
+CREATE DATABASE db_video_juegos;
+GO
+USE db_video_juegos;
+GO
+
+CREATE TABLE [Categorias] (
+    [Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    [Nombre] NVARCHAR(50) NOT NULL UNIQUE,
+);
+
+INSERT INTO [Categorias] ([Nombre]) VALUES ('Accion');
+INSERT INTO [Categorias] ([Nombre]) VALUES ('Deportes');
+
+SELECT * FROM [Categorias];
+
+
+CREATE TABLE [Juegos] (
+    [Id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    [Codigo] NVARCHAR(50) NOT NULL UNIQUE,
+    [Nombre] NVARCHAR(50) NOT NULL,
+    [NumCopias] INT NOT NULL,
+    [Fecha] SMALLDATETIME NOT NULL,
+    [Categoria] INT NOT NULL REFERENCES Categorias([Id]),
+    [Activo] BIT NOT NULL,
+    [Personajes] NVARCHAR(MAX) NULL,
+);
+
+INSERT INTO [Juegos] ([Codigo],[Nombre],[NumCopias],[Fecha],[Categoria],[Activo]) 
+VALUES ('54654654','GOW',5000,GETDATE(),1,1);
+
+SELECT * FROM [Juegos];
