@@ -46,6 +46,9 @@
 - Control Panel\User Accounts\Credential Manager
 
 # Proyectos
+-VsCode
+	dotnet new console -n Nombre
+
 - ASP.NET Core Web API
 	- No usar: configurar Https
 	- Use OpenAPI # Swagger
