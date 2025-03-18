@@ -33,5 +33,5 @@ var personaje2= new Personajes()
 };
 Console.WriteLine(personaje2.tipo.nombre);
 
-var conexion = new ConexionEF();
+var conexion = new ConexionEF3();
 conexion.ConexionBasica();

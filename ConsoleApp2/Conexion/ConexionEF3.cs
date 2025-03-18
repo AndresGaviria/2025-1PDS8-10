@@ -5,20 +5,26 @@ namespace ConsoleApp2.Conexion
 {
     public class ConexionEF3
     {
-        private string string_conexion = "server=localhost;database=db_video_juegos;Integrated Security=True;TrustServerCertificate=true;";
-        // server=localhost;database=db_video_juegos;uid=sa;pwd=Clas3sPrO2024_!;TrustServerCertificate=true;
-        // server=localhost;database=db_video_juegos;Integrated Security=True;TrustServerCertificate=true;
+        private string string_conexion = "server=localhost;database=db_instrumentos;Integrated Security=True;TrustServerCertificate=true;";
+        // server=localhost;database=db_instrumentos;uid=sa;pwd=Clas3sPrO2024_!;TrustServerCertificate=true;
+        // server=localhost;database=db_instrumentos;Integrated Security=True;TrustServerCertificate=true;
 
         public void ConexionBasica()
         {
-            var conexion = new Conexion2();
+            var conexion = new Conexion3();
             conexion.StringConnection = this.string_conexion;
 
-            var lista = conexion.Juegos!.ToList();
+            var lista = conexion.Instrumentos!.ToList();
 
             foreach (var elemento in lista)
             {
-                Console.WriteLine(elemento.Id.ToString() + ", " + elemento.Nombre);
+                Console.WriteLine(elemento.Id.ToString() + ", " + 
+                    elemento.Codigo + ", " + 
+                    elemento.Nombre + ", " + 
+                    elemento.Cantidad.ToString() + ", " + 
+                    elemento.Fecha.ToString() + ", " + 
+                    elemento.Tipo.ToString() + ", " + 
+                    elemento.Activo.ToString());
             }
         }
 
