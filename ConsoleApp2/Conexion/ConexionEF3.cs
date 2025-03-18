@@ -30,18 +30,20 @@ namespace ConsoleApp2.Conexion
 
         public void ConexionInsert()
         {
-            var conexion = new Conexion2();
+            var conexion = new Conexion3();
             conexion.StringConnection = this.string_conexion;
 
-            var juego = new Juegos();
-            juego.Codigo = "54654651";
-            juego.Nombre = "Mario Bros";
-            juego.NumCopias = 100;
-            juego.Fecha = DateTime.Now;
-            juego.Categoria = 2;
-            juego.Activo = false;
+            var tipo = conexion.Tipos!.FirstOrDefault(x => x.Nombre == "Viento");
 
-            conexion.Juegos!.Add(juego);
+            var instrumento = new Instrumentos();
+            instrumento.Codigo = "TS-1526546";
+            instrumento.Nombre = "Prueba";
+            instrumento.Cantidad = 2;
+            instrumento.Fecha = DateTime.Now;
+            instrumento.Tipo = tipo!.Id;
+            instrumento.Activo = false;
+
+            conexion.Instrumentos!.Add(instrumento);
             conexion.SaveChanges();
         }
     }
